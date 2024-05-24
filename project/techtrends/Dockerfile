@@ -3,7 +3,7 @@ FROM python:3.8
 
 COPY . /app
 WORKDIR /app
-RUN pip install -r /app/requirements.txt
+RUN pip install -r /app/project/techtrends/requirements.txt
 
 EXPOSE 3111
 
