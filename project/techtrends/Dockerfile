@@ -8,5 +8,5 @@ RUN pip install -r /app/project/techtrends/requirements.txt
 EXPOSE 3111
 
 # command to run on container start
-RUN python init_db.py
-CMD [ "python", "app.py" ]
+RUN python /app/project/techtrends/init_db.py
+CMD [ "python", "/app/project/techtrends/app.py" ]
